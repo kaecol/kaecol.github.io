@@ -1,3 +1,9 @@
+$("#anythingSearch").keypress(function(event) {
+            if (event.keyCode === 13) {
+                $("#toggleAccordions-show").click(); 
+            }
+        });
+
 $('#anythingSearch').keyup(function(){
     search_text($(this).val());
 });
