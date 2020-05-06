@@ -12,6 +12,7 @@
       gtag('config', 'UA-165719516-1');
     </script>
 
+
     <title>BBML &mdash; Biological and Biomimetic Materials Laboratory</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -278,7 +279,7 @@
 
         <div class="row justify-content-center mb-5">
           <div id="filters" class="filters text-center button-group col-md-9">
-            <button class="btn btn-primary active" data-filter="*">All</button>
+            <button id="allbtn" class="btn btn-primary active" data-filter="*">All</button>
             <button class="btn btn-primary" data-filter=".bioelastomers">Bioelastomeric Membranes & Coiled-Coil Engineering</button>
             <button class="btn btn-primary" data-filter=".biofouling">Biofouling & Anti-Adhesive Coatings</button>
             <button class="btn btn-primary" data-filter=".nonminerals">Molecular Biomimetics of Non-Mineralized Hard Tissues</button>
@@ -1343,8 +1344,11 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
   <script src="js/main.js"></script>
-
-
+  <script>
+    window.onload = function(){
+    document.getElementById('allbtn').click();
+  }
+  </script>
 
   </body>
 </html>
