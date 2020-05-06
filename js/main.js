@@ -1,6 +1,6 @@
 $("#anythingSearch").keypress(function(event) {
             if (event.keyCode === 13) {
-                $("#toggleAccordions-show").click(); 
+                $("#toggleAccordions-show").click();
             }
         });
 
@@ -347,19 +347,19 @@ jQuery(document).ready(function($) {
 	siteSticky();
 
 	// navigation
+
   var OnePageNavigation = function() {
     var navToggler = $('.site-menu-toggle');
-   	$("body").on("click", ".main-menu li a[href^='#'], .smoothscroll[href^='#'], .site-mobile-menu .site-nav-wrap li a", function(e) {
-      e.preventDefault();
 
-      var hash = this.hash;
+   	$("body").on("click", ".main-menu li a[href^='#'] a[href^=''], .smoothscroll[href^='#'], .site-mobile-menu .site-nav-wrap li a", function(e) {
 
-      $('html, body').animate({
-        'scrollTop': $(hash).offset().top
-      }, 600, 'easeInOutExpo', function(){
-        window.location.hash = hash;
-      });
+      var dog = this.hash;
 
+        $('html, body').animate({
+          'scrollTop': $(dog).offset().top
+        }, 600, 'easeInOutExpo', function(){
+          window.location.hash = dog;
+        });
     });
   };
   OnePageNavigation();
