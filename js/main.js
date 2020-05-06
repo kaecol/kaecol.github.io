@@ -360,6 +360,11 @@ jQuery(document).ready(function($) {
         }, 600, 'easeInOutExpo', function(){
           window.location.hash = dog;
         });
+
+        if ( $('body').hasClass('offcanvas-menu') ) {
+          $('body').removeClass('offcanvas-menu');
+        }
+
     });
   };
   OnePageNavigation();
