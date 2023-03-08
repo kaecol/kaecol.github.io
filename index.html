@@ -345,7 +345,7 @@
 
           <div class="col-xl-4 col-md-6 d-flex" data-aos="zoom-in" data-aos-delay="200">
             <div class="team-member">
-              <div class="member-img">
+              <div class="member-img" data-bs-toggle="modal" data-bs-target="#LayPohModal">
                 <img src="assets/img/team/team-1.jpg" class="img-fluid" alt="">
               </div>
               <div class="member-info">
@@ -356,7 +356,7 @@
                   <a href=""><i class="bi bi-linkedin"></i></a>
                 </div>
                 <h4>Prof. Tan Lay Poh</h4>
-                <span>Principal Investigator</span>
+                <span>Principal Investigator</span>           
               </div>
             </div>
           </div><!-- End Team Member -->
@@ -510,7 +510,7 @@
           <div class="col-lg-8 col-md-6 content d-flex flex-column justify-content-center order-last order-md-first">
             <h3>Interested in our research? <em>Join Us.</em></h3>
             <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <a class="cta-btn align-self-start" href="#">Contact us</a>
+            <a class="cta-btn align-self-start" href="mailto:LPTan@ntu.edu.sg">Contact us</a>
           </div>
 
           <div class="col-lg-4 col-md-6 order-first order-md-last d-flex align-items-center">
@@ -534,7 +534,6 @@
 
             <div class="info">
               <h3>Get in touch</h3>
-              <p>Et id eius voluptates atque nihil voluptatem enim in tempore minima sit ad mollitia commodi minus.</p>
 
               <div class="info-item d-flex">
                 <i class="bi bi-envelope flex-shrink-0"></i>
@@ -625,5 +624,24 @@
   <script src="assets/js/main.js"></script>
 
 </body>
+
+<!-- Modal -->
+<div class="modal fade" id="LayPohModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 </html>
