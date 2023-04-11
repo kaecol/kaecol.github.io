@@ -41,19 +41,19 @@
 
 <body>
 
-   <!-- ======= Header ======= -->
-   <header id="header" class="header d-flex align-items-center fixed-top">
-    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+  <!-- ======= Header ======= -->
+  <header id="header" class="header fixed-top" data-scrollto-offset="0">
+    <div class="container-fluid d-flex align-items-center justify-content-between">
 
-      <a href="index.html" class="logo d-flex align-items-center">
-        <h1 class="d-flex align-items-center"><span><b>TLP</b></span>'s Lab</h1>
+      <a href="index.html" class="logo d-flex align-items-center scrollto me-auto me-lg-0">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <h1><span><b>TLP</b></span>'s Lab</h1>
       </a>
-
-      <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
-      <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
 
       <nav id="navbar" class="navbar">
         <ul>
+
           <li><a class="nav-link scrollto" href="index.html#about">About Us</a></li>
           <li><a class="nav-link scrollto" href="index.html#research">Research</a></li>
           <li><a class="nav-link scrollto" href="index.html#publications">Publications & Inventions</a></li>
@@ -61,28 +61,30 @@
           <li><a class="nav-link scrollto" href="index.html#careers">Careers</a></li>
           <li><a class="nav-link scrollto" href="index.html#contact">Contact</a></li>
         </ul>
+        <i class="bi bi-list mobile-nav-toggle d-none"></i>
       </nav><!-- .navbar -->
+
+      <div></div>
 
     </div>
   </header><!-- End Header -->
 
-  <!-- ======= Hero Section ======= -->
-  <section id="hero" class="hero d-flex align-items-center">
-    <div class="container">
-      <div class="row">
-        <div class="col-xl-4">
-          <h2>Welcome to</h2>
-          <h2><span><b>Tan Lay Poh</b></span>'s Lab</h2>
-          <p>Dedicated to advancing sustainable & biomedical materials research.</p>
-          <div class="d-flex" data-aos="fade-up" data-aos-delay="200">
-            <a href="#about" class="btn-get-started">Get Started</a>
-          </div>
-
+  <section id="hero-fullscreen" class="hero-fullscreen d-flex align-items-center">
+    <div class="row">
+      <div class="col-xl-4 col-lg-6 col-sm-12 container d-flex flex-column justify-content-center align-items-center text-center position-relative" data-aos="zoom-out">
+        <!--<img src="assets/img/hero-carousel/hero-carousel-3.png" class="img-fluid animated">-->
+        <h2>Welcome to</h2>
+        <h2><span><b>Tan Lay Poh</b></span>'s Lab</h2>
+        <p>Dedicated to advancing sustainable & biomedical materials research.</p>
+        <div class="d-flex">
+          <a href="#about" class="btn-get-started scrollto">Get Started</a>
         </div>
       </div>
+      <div class="col-xl-8 col-lg-6 col-sm-12 container d-flex flex-column justify-content-center align-items-center text-center position-relative" data-aos="zoom-out">
+        <img src="assets/img/meatdish.JPG" class="img-fluid">
+      </div>
     </div>
-  </section><!-- End Hero Section -->
-
+  </section>
 
   <main id="main">
 
@@ -96,7 +98,7 @@
 
         <div class="row g-4 g-lg-5" data-aos="fade-up" data-aos-delay="100">
 
-          <div class="col-lg-5 d-flex justify-content-center">
+          <div class="col-lg-5">
             <div class="about-img">
               <img src="assets/img/about.jpg" class="img-fluid" alt="">
             </div>
