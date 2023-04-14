@@ -250,7 +250,7 @@
         <div class="row gy-5">
 
           <div class="col-xl-3 col-md-6" data-aos="zoom-in" data-aos-delay="100">
-            <div class="service-item">
+            <div class="service-item" data-bs-toggle="modal" data-bs-target="#FoodModal">
               <div class="img">
                 <img src="assets/img/research/food.jpg" class="img-fluid" alt="">
               </div>
@@ -258,9 +258,9 @@
                 <div class="icon">
                   <i class="bi bi-virus"></i>
                 </div>
-                <a href="#" class="stretched-link">
+                <div class="stretched-link">
                   <h3>Cultivated Meat</h3>
-                </a>
+                </div>
                 <p>Our lab is developing innovative techniques to create sustainable meat products without animal slaughter. We focus on optimizing cell growth and tissue engineering to produce high-quality meat.</p>
               </div>
             </div>
@@ -275,16 +275,16 @@
                 <div class="icon">
                   <i class="bi bi-bandaid"></i>
                 </div>
-                <a href="#" class="stretched-link">
+                <div class="stretched-link">
                   <h3>Tissue Engineering</h3>
-                </a>
+                </div>
                 <p>We develop advanced biomaterials and scaffolds to engineer functional and viable living tissues. We also explore the use of stem cells to create personalized and regenerative therapies.</p>
               </div>
             </div>
           </div><!-- End Service Item -->
 
           <div class="col-xl-3 col-md-6" data-aos="zoom-in" data-aos-delay="200">
-            <div class="service-item">
+            <div class="service-item" data-bs-toggle="modal" data-bs-target="#WasteModal">
               <div class="img">
                 <img src="assets/img/research/waste.jpg" class="img-fluid" alt="">
               </div>
@@ -292,9 +292,9 @@
                 <div class="icon">
                   <i class="bi bi-recycle"></i>
                 </div>
-                <a href="#" class="stretched-link">
+                <div class="stretched-link">
                   <h3>Waste Valorization</h3>
-                </a>
+                </div>
                 <p>Our lab advances the circular economy through waste valorization, converting waste into valuable products. We reduce biowaste by creating sustainable value from waste streams.</p>
               </div>
             </div>
@@ -309,9 +309,9 @@
                 <div class="icon">
                   <i class="bi bi-link"></i>
                 </div>
-                <a href="#" class="stretched-link">
+                <div class="stretched-link">
                   <h3>Polymers/Composites</h3>
-                </a>
+                <div>
                 <p>We excel in polymer and composite research, creating and engineering advanced materials. These composites have enhanced or unique properties suited for various applications.</p>
                 <a href="#" class="stretched-link"></a>
               </div>
@@ -337,9 +337,13 @@
                 At our lab, we are dedicated to advancing scientific knowledge and making meaningful contributions to society. To this end, we have curated a list of our notable publications and inventions.
               </p>
               <ul>
-                <li><i class="bi bi-check-circle"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                <li><i class="bi bi-check-circle"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-                <li><i class="bi bi-check-circle"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
+                <li><i class="bi bi-journal-text"></i> Seah, Jasmine Si Han, et al. "Scaffolds for the manufacture of cultured meat." Critical Reviews in Biotechnology 42.2 (2022): 311-323. <a href="https://doi.org/10.1080/07388551.2021.1931803">doi:10.1080/07388551.2021.1931803</a></li>
+                <li><i class="bi bi-file-earmark-medical"></i> Lay Poh Tan, Pei Leng Tan and Huizhi Chen. “Core-shell Microspheres.” International Patent WO/2022/154754 (2022).</li>
+                <li><i class="bi bi-file-earmark-medical"></i> Lay Poh Tan, Feng Wen and Jasmine Si Han Seah. “Hydrogel Scaffolds and Uses Thereof.” International Patent WO/2022/225458 A1 (2022).</li>
+                <li><i class="bi bi-journal-text"></i> Panwar, Amit, and Lay Poh Tan. "Current status of bioinks for micro-extrusion-based 3D bioprinting." Molecules 21.6 (2016): 685. <a href="https://doi.org/10.3390/molecules21060685">doi:10.3390/molecules21060685</a></li>
+                <li><i class="bi bi-journal-text"></i> Shirahama, Hitomi, et al. "Precise tuning of facile one-pot gelatin methacryloyl (GelMA) synthesis." Scientific reports 6.1 (2016): 31036. <a href="https://doi.org/10.1038/srep31036">doi:10.1038/srep31036</a></li>
+                <li><i class="bi bi-journal-text"></i> Tay, Chor Yong, et al. "Nanoparticles strengthen intracellular tension and retard cellular migration." Nano letters 14.1 (2014): 83-88. <a href="https://doi.org/10.1021/nl4032549">doi:10.1021/nl4032549</a></li>
+                
               </ul>
               <a href="https://scholar.google.com/citations?hl=en&user=aIT4-wIAAAAJ&view_op=list_works&sortby=pubdate" target="_blank" class="read-more align-self-start"><span>Full List on Google Scholar</span><i class="bi bi-arrow-right"></i></a>
             </div>
@@ -869,5 +873,74 @@
   </div>
 </div>
 <!-- Modal End -->
+
+<!-- Modal -->
+<div class="modal fade" id="FoodModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-xl modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div class="modal-title">Cultivated Meat</div>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body row d-flex flex-wrap align-items-center">
+        <div class="col-lg-8 p-4">
+          <h3>Versatile and Cost-Efficient Cultured Meat Platform</h3>
+          <div>
+            Due to rising demand and a growing population, global meat consumption is on the rise. However, the current meat production system is one of the major drivers of environmental degradation. Animal agriculture contributes 14.5% of global greenhouse emissions and occupies 77% of earth’s habitable land to raise and feed livestock while only providing 17% of global calory supply. The production of animal-based foods is considered an inefficient system as 97% of the calories used for feeding the animals are lost in the entire process.  The water consumption for livestock and associated feed crop production also severely reduces global fresh water; 29% of the total water footprint of the agricultural globally used in the production of animal-based products; out of which one-third of the global water footprint is related to beef cattle. These effects are felt even more acutely in Singapore where resources such as land and water are extremely scarce. Hence the current way of providing meat to the feed the population is not sustainable. Cultured meat could be one viable way to supplement the traditional methods of meat production. One of the main challenges of cultured meat is the cost involved due to the highly complex and expensive culture media. 
+            <br><br>Our technology focuses on using materials and material designs to circumvent the heavy reliance of cellular behaviour such as proliferation and differentiation on the expensive and specific culture media. Using our technology, the process of cell culture is highly simplified, and cost is reduced significantly. The technology is also versatile enough for producing prototypes of muscle or fat cells with just minimal material designs. The processing methods and material designs developed are highly scalable. 
+          </div>
+        </div>
+        <div class="col-lg-4 p-4">
+          <figure class="fig-img p-2">
+            <img src="assets/img/meatglove.JPG" class="img-fluid" alt="">
+            <figcaption>Scaffold for cultivated meat</figcaption>
+          </figure>
+          <figure class="fig-img p-2">
+            <img src="assets/img/fatdish.jpg" class="img-fluid" alt="">
+            <figcaption>Cultivated fats prototype</figcaption>
+          </figure>
+        </div>
+      </div>
+      <div class="modal-footer">
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal End -->
+
+<!-- Modal -->
+<div class="modal fade" id="WasteModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-xl modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div class="modal-title">Waste Valorization</div>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body row d-flex flex-wrap align-items-center">
+        <div class="col-lg-8 p-4">
+          <h3>Side stream to high value functional food</h3>
+          <div>
+            The amount of food waste generated have been increasing over the years, with a high percentage of food waste being disposed without recycling. This places pressure on resources to build waste disposal facilities such as waste-to-energy plants and landfills, which is unfavorable for land-scarce countries like Singapore. In addition, decomposing food waste landfills contribute to gaseous emissions which results in global warming. Often, food waste are excellent sources of value-added products as they have high organic content. For instance, food waste such as fish skin and bullfrog skin are rich in collagen which can be extracted. Collagen is often used in tissue engineering and wound healing applications. While its derivative, gelatin, is often used in food applications as an additive for baking, snacks and candies. It is rich in protein, and has a unique amino acid profile that gives it many potential health benefits.  
+            <br><br>In our laboratory we investigate and manipulate the structure property relationship of the extracted collagen and gelatin to obtain materials with a range of properties including the mechanical, thermal properties and texture to enable it to be used in a wide range of food products. These developed final products have high amino acid contents and are good source of protein. The properties could be tailored for human or animal consumption.   
+          </div>
+        </div>
+        <div class="col-lg-4 p-4">
+          <figure class="fig-img p-2">
+            <img src="assets/img/fishwaste.JPG" class="img-fluid" alt="">
+            <figcaption>Aquaculture skin waste valorization</figcaption>
+          </figure>
+          <figure class="fig-img p-2">
+            <img src="assets/img/featherwaste.jpg" class="img-fluid" alt="">
+            <figcaption>Chicken feather skin waste valorization</figcaption>
+          </figure>
+        </div>
+      </div>
+      <div class="modal-footer">
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal End -->
+
 
 </html>

@@ -50,6 +50,18 @@ h6 {
   font-size: larger;
 }
 
+figcaption {
+  font-style: italic;
+  padding: 2px;
+  text-align: center;
+}
+
+fig-img {
+  position: center;
+  max-width: 35vw;
+  min-width: 20vw;
+}
+
 /*--------------------------------------------------------------
 # Preloader
 --------------------------------------------------------------*/
