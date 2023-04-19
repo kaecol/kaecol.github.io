@@ -634,17 +634,7 @@ section {
 
 .about .about-img {
   position: center;
-  margin: 60px 0 0 60px;
-  max-width: 35vw;
-}
-
-.about .about-img:before {
-  position: absolute;
-  inset: -60px 0 0 -60px;
-  z-index: -1;
-  content: "";
-  background: url("../img/about-bg.png") top left;
-  background-repeat: no-repeat;
+  max-width: 30vw;
 }
 
 @media (max-width: 1000px) {
@@ -661,12 +651,7 @@ section {
 
 @media (max-width: 575px) {
   .about .about-img {
-    margin: 30px 0 0 30px;
     max-width: 80vw;
-  }
-
-  .about .about-img:before {
-    inset: -30px 0 0 -30px;
   }
 }
 
