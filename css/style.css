@@ -177,6 +177,7 @@ a:hover {
     line-height: 43px;
   }
 }
+
 .cd-headline.clip span {
   padding: 0px;
 }
@@ -203,6 +204,11 @@ a:hover {
   font-size: 14px;
   letter-spacing: 1px;
   font-weight: 700;
+}
+
+.navbar-brand img {
+  max-width: 150px;
+  height: auto;
 }
 
 ul.dropdown-menu {
@@ -274,33 +280,28 @@ ul.dropdown-menu > li > a:hover, .navbar ul ul ul.dropdown-menu li .nav-link:hov
   opacity: 1;
   visibility: visible;
   -webkit-transform: scaleY(1);
+  /* Safari and older Chrome */
   -moz-transform: scaleY(1);
+  /* Firefox */
   -ms-transform: scaleY(1);
+  /* Internet Explorer */
   -o-transform: scaleY(1);
+  /* Older Opera */
+  transform: scaleY(1);
+  /* Standard syntax */
 }
 
-@media (max-width: 575px) {
+@media (max-width: 991px) {
   .navbar-nav .dropdown-menu {
     position: absolute;
   }
   .banner .cd-headline {
-    font-size: 32px;
-    line-height: 42px;
+    font-size: 48px;
+    line-height: 60px;
   }
-  .btn-group, .btn-group-vertical {
-    display: block;
-  }
-  .btn-group > .btn {
-    padding: 20px;
-  }
-}
-@media (max-width: 400px) {
-  .navbar-nav .dropdown-menu {
-    position: absolute;
-  }
-  .banner .cd-headline {
-    font-size: 32px;
-    line-height: 42px;
+  .banner h3 {
+    font-size: 24px;
+    line-height: 34px;
   }
   .btn-group, .btn-group-vertical {
     display: block;
@@ -314,8 +315,12 @@ ul.dropdown-menu > li > a:hover, .navbar ul ul ul.dropdown-menu li .nav-link:hov
     position: absolute;
   }
   .banner .cd-headline {
-    font-size: 32px;
-    line-height: 42px;
+    font-size: 36px;
+    line-height: 48px;
+  }
+  .banner h3 {
+    font-size: 20px;
+    line-height: 30px;
   }
   .btn-group, .btn-group-vertical {
     display: block;
@@ -324,13 +329,36 @@ ul.dropdown-menu > li > a:hover, .navbar ul ul ul.dropdown-menu li .nav-link:hov
     padding: 20px;
   }
 }
-@media (max-width: 991px) {
+@media (max-width: 575px) {
   .navbar-nav .dropdown-menu {
     position: absolute;
   }
   .banner .cd-headline {
-    font-size: 32px;
-    line-height: 42px;
+    font-size: 26px;
+    line-height: 36px;
+  }
+  .banner h3 {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .btn-group, .btn-group-vertical {
+    display: block;
+  }
+  .btn-group > .btn {
+    padding: 20px;
+  }
+}
+@media (max-width: 400px) {
+  .navbar-nav .dropdown-menu {
+    position: absolute;
+  }
+  .banner .cd-headline {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .banner h3 {
+    font-size: 16px;
+    line-height: 20px;
   }
   .btn-group, .btn-group-vertical {
     display: block;
