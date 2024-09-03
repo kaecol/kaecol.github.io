@@ -553,6 +553,7 @@ ul.dropdown-menu>li>a:hover,
   color: #2f3238;
   transform: translateX(-150px);
   transition: all 0.5s;
+  line-height: 18px;
 }
 
 .portfolio-image {
@@ -879,16 +880,41 @@ textarea.form-control {
   color: #f44336;
 }
 
-.card:hover {
-  transform: scale(1.1);
-}
-
 .divider {
   border: 0;
   border-top: 2px solid #333;
   /* Adjust color and thickness as needed */
   margin: 20px 0;
   /* Space around the divider */
+}
+
+.big-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.scrolling-container {
+  margin: auto;
+  max-height: 100%;
+  overflow-x: auto;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
+  -webkit-overflow-scrolling: touch;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  .card {
+    flex: 0 0 auto;
+    margin-right: 3px;
+    width: 300px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
