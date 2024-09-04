@@ -61,7 +61,7 @@ AOS.init({
         }
     });
 
-     $('.portfolio-gallery').each(function () {
+     $('.product-gallery').each(function () {
         $(this).find('.popup-gallery').magnificPopup({
             type: 'image',
             gallery: {

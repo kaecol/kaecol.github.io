@@ -424,34 +424,34 @@ ul.dropdown-menu>li>a:hover,
   }
 }
 
-.portfolio {
+.product {
   padding-bottom: 100px;
 }
 
-.portfolio .btn:focus,
-.portfolio .btn:hover,
-.portfolio .btn.focus.active {
+.product .btn:focus,
+.product .btn:hover,
+.product .btn.focus.active {
   box-shadow: none !important;
   outline: 0 !important;
 }
 
-.portfolio .btn-group .btn {
+.product .btn-group .btn {
   border-radius: 0px !important;
   padding-left: 0px;
   font-weight: 700;
 }
 
-.portfolio .btn-group .btn:hover {
+.product .btn-group .btn:hover {
   color: #f44336;
 }
 
-.portfolio .btn-group:not(:first-child)>.btn,
-.portfolio .btn-group>.btn:not(:first-child) {
+.product .btn-group:not(:first-child)>.btn,
+.product .btn-group>.btn:not(:first-child) {
   border-top-left-radius: 0px;
   border-bottom-left-radius: 0px;
 }
 
-.portfolio .btn.active {
+.product .btn.active {
   color: #f44336;
 }
 
@@ -482,6 +482,7 @@ ul.dropdown-menu>li>a:hover,
   display: block;
   transition: all 0.6s ease;
   overflow: hidden;
+  pointer-events: none;
 }
 
 .inner-box .image .overlay-box:before {
@@ -556,7 +557,7 @@ ul.dropdown-menu>li>a:hover,
   line-height: 18px;
 }
 
-.portfolio-image {
+.product-image {
   width: 60px;
   height: 60px;
   display: inline-block;
