@@ -91,11 +91,11 @@ h6,
 }
 
 .section {
-  padding: 120px 0px;
+  padding: 60px 0px;
 }
 
 .section-sm {
-  padding: 60px 0px;
+  padding: 30px 0px;
 }
 
 .btn {
@@ -176,6 +176,16 @@ a:hover {
 .page-title h1 {
   position: relative;
   padding-bottom: 30px;
+  font-size: 6vw;
+  /* This scales the font size based on 6% of the viewport width */
+  text-transform: capitalize;
+}
+
+@media (min-width: 900px) {
+  .page-title h1 {
+    font-size: 3rem;
+    /* Fixed size for larger screens */
+  }
 }
 
 .page-title h1:after {
