@@ -663,28 +663,54 @@ ul.dropdown-menu>li>a:hover,
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease-in-out;
   opacity: 1;
-  /* Ensure opacity is set to 1 */
 }
 
 .scenario-card h4 {
   color: #333333;
   margin-bottom: 15px;
   text-align: center;
-  /* Center title */
+  font-size: 1.25rem;
+  /* Base font size for titles */
 }
 
+/* Adjust font size for paragraphs */
 .scenario-card p {
   color: #555555;
-  font-size: 14px;
+  font-size: 1rem;
+  /* Base font size */
   margin-bottom: 10px;
   padding: 10px;
-  /* Adjust this value as needed */
+}
+
+/* Responsive font size for tablets and smaller screens */
+@media (max-width: 768px) {
+  .scenario-card h4 {
+    font-size: 1.20rem;
+    /* Slightly smaller font size for titles */
+  }
+
+  .scenario-card p {
+    font-size: 0.95rem;
+    /* Slightly smaller font size for paragraphs */
+  }
+}
+
+/* Further adjustments for very small screens */
+@media (max-width: 576px) {
+  .scenario-card h4 {
+    font-size: 1.1rem;
+    /* Ensure title is still readable on small screens */
+  }
+
+  .scenario-card p {
+    font-size: 0.9rem;
+    /* Ensure paragraph text is still readable */
+  }
 }
 
 .card-image {
   width: 100%;
   max-width: 25%;
-  /* Adjust this percentage to be smaller */
   height: auto;
   margin-bottom: 15px;
   border-radius: 8px;
@@ -699,22 +725,6 @@ ul.dropdown-menu>li>a:hover,
   margin-bottom: 5px;
 }
 
-@media (max-width: 768px) {
-  .scenario-card p {
-    font-size: 13px;
-  }
-}
-
-@media (max-width: 576px) {
-  .scenario-card h4 {
-    font-size: 18px;
-  }
-
-  .scenario-card p {
-    font-size: 12px;
-  }
-}
-
 .accordion {
   background-color: #f1f1f1;
   color: #444;
@@ -724,7 +734,8 @@ ul.dropdown-menu>li>a:hover,
   border: none;
   text-align: left;
   outline: none;
-  font-size: 16px;
+  font-size: 1rem;
+  /* Base font size for accordion buttons */
   transition: background-color 0.3s;
 }
 
