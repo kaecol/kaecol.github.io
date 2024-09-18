@@ -1,0 +1,17 @@
+{
+  "name": "kaecol.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "postcss.config.js",
+  "scripts": {
+    "build:css": "postcss css/style.css -o css/style.min.css --no-map"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^6.0.0",
+    "autoprefixer": "^10.4.20",
+    "postcss-cli": "^11.0.0"
+  }
+}

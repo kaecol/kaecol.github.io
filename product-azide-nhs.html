@@ -29,7 +29,7 @@
 <body>
 
 	<!-- Navigation Start -->
-	<nav class="navbar navbar-expand-lg  main-nav " id="navbar">
+	<nav class="navbar navbar-expand-lg  main-nav fixed-top" id="navbar">
 		<div class="container">
 			<a class="navbar-brand" href="index.html">
 				<img src="images/logo.png" alt="" class="img-fluid">
@@ -112,7 +112,7 @@
 							</div>
 							<div class="col-sm-6">
 								<div class="info">
-									<a id="enquireButton" href="#" class="btn btn-main btn-small">Enquire</a>
+									<a class="enquire-btn btn btn-main btn-small" href="#">Enquire</a>
 								</div>
 							</div>
 						</div>
@@ -241,17 +241,6 @@
 		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAkeLMlsiwzp6b3Gnaxd86lvakimwGA6UA&callback=initMap"></script>
 	<!-- Main Script -->
 	<script src="js/script.js"></script>
-	<script>
-		document.addEventListener("DOMContentLoaded", function () {
-			// Get the page title
-			var pageTitle = document.title;
-			// Encode the title for use in a URL
-			var encodedTitle = encodeURIComponent(pageTitle);
-			// Set the href attribute of the enquire button
-			var enquireButton = document.getElementById("enquireButton");
-			enquireButton.href = "mailto:kenrick.koh@carcell.com?subject=" + encodedTitle;
-		});
-	</script>
 
 </body>
 
