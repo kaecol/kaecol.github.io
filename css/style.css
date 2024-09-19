@@ -708,17 +708,6 @@ ul.dropdown-menu>li>a:hover,
   }
 }
 
-.card-image {
-  width: 100%;
-  max-width: 25%;
-  height: auto;
-  margin-bottom: 15px;
-  border-radius: 8px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .card-header {
   font-weight: bold;
   margin-top: 20px;
@@ -748,7 +737,36 @@ ul.dropdown-menu>li>a:hover,
   display: none;
   padding: 0 18px;
   overflow: hidden;
-  background-color: #f1f1f1;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  /* Border color */
+  border-top: none;
+  /* Remove top border to connect with accordion */
+  border-radius: 0 0 4px 4px;
+  /* Rounded corners at bottom */
+}
+
+.images-wrapper {
+  display: flex;
+  align-items: center;
+  /* Vertically centers the plus sign between images */
+  justify-content: center;
+  /* Ensures the images and plus sign are evenly spaced */
+}
+
+.card-image {
+  max-width: 100%;
+  width: 35%;
+  /* Adjust the image width as needed to control the size */
+}
+
+.plus-sign {
+  font-size: 50px;
+  /* Adjust the size as needed */
+  margin: 0 10px;
+  /* Adds space between the images and the plus sign */
+  color: #f44336;
+  /* Color of the plus sign */
 }
 
 /*# sourceMappingURL=style.css.map */
